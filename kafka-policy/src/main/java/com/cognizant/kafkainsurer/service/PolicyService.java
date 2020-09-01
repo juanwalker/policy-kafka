@@ -44,6 +44,9 @@ public class PolicyService {
 
     public void book(String policyNumber) {
         kafkaLog.send(AppConstants.LOG_TOPIC_NAME, "book( "  + policyNumber +  ") method called ");
+        Policy policy = this.repository.findByPolicyNumberQuery(policyNumber);
+        policy.setStatus("Awaiting Booking Validation");
+        policy = this.repository.save(policy);
         kafkaLog.send(AppConstants.BOOK_TOPIC,policyNumber);
 
     }
