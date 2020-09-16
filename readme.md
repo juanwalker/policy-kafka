@@ -1,6 +1,6 @@
 # Policy Kafka test
 
-This program will test the functionality of kafka to integrate three microservices: Policy generator, policy booking and log management usinga mongo data engine
+This program will test the functionality of kafka to integrate three microservices: Policy generator, policy booking and log management using a mongo data engine
 
 ## Installation
 
@@ -10,6 +10,8 @@ To setup the needed enviroment you need to install the following applications:
  * [Intellj](https://www.jetbrains.com/es-es/idea/) community edition
 
 * [Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=es) Chrome extension
+
+In mongo, please prepare two different databases: logdb, policydb
 
 For kafka installation you can use this [guide](https://dzone.com/articles/running-apache-kafka-on-windows-os) and create these three topics using this commands in a windows machine: 
 
