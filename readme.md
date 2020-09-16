@@ -16,7 +16,7 @@ For kafka installation you can use this [guide](https://dzone.com/articles/runni
 ```bash
 kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 100 --topic logTopic
 
-kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 100 --topic newSubmissionTopic
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 100 --topic bookCallbackTopic
 
 kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 100 --topic bookedTopic
 

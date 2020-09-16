@@ -30,7 +30,7 @@ public class PolicyService {
         kafkaLog.send(AppConstants.LOG_TOPIC_NAME, "newSubmission( "  + policy +  ") method called ");
         policy.setStatus("In progress");
         policy = this.repository.save(policy);
-        kafkaLog.send(AppConstants.LOG_TOPIC_NAME, "Policy saved : " + policy);
+        kafkaLog.send(AppConstants.LOG_TOPIC_NAME, "Policy saved : " + policy.policyNumber);
         return policy;
     }
 
